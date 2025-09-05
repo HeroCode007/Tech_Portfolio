@@ -41,20 +41,18 @@ https://syedsaifali007.com/
    ```bash
    git clone https://github.com/YOUR-USERNAME/portfolio-website.git
    cd portfolio-website
+   
 Install dependencies
-
-bash
-Copy code
+```bash
 npm install
 Run development server
 
-bash
-Copy code
+```bash
 npm run dev
 Build for production
 
-bash
-Copy code
+```bash
+
 npm run build
 Preview production build
 
