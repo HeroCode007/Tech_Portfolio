@@ -29,11 +29,11 @@ https://syedsaifali007.com/
 ---
 
 ## 📂 Project Structure
-├─ src/                # components, pages, hooks, assets
-├─ index.html          # Vite entry
-├─ vite.config.*       # Vite config
-├─ tailwind.config.*   # Tailwind theme/config
-├─ postcss.config.*    # Tailwind/PostCSS pipeline
+├─ src/                
+├─ index.html          
+├─ vite.config.*       
+├─ tailwind.config.*   
+├─ postcss.config.*   
 
 ## 🛠️ Installation & Setup
 
