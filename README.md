@@ -47,17 +47,12 @@ Install dependencies
 npm install
 Run development server
 
-```bash
 npm run dev
 Build for production
-
-```bash
 
 npm run build
 Preview production build
 
-bash
-Copy code
 npm run preview
 
 🤝 Contributing
