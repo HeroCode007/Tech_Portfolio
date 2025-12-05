@@ -89,7 +89,7 @@ const HeroWithLaptop = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/HeroCode007", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/syed-saif-ali-4533b5323/", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:herosaif000@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:saifalisyed5086@gmail.com", label: "Email" },
   ];
 
   return (
@@ -130,28 +130,53 @@ const HeroWithLaptop = () => {
                     Syed Saif Ali
                   </span>
                   {/* Glowing underline */}
-                  <span className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-0.5 sm:h-1 bg-gradient-to-r from-green-500 via-emerald-400 to-green-500 rounded-full shadow-lg shadow-green-500/50"></span>
+                  {/* <span className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-0.5 sm:h-1 bg-gradient-to-r from-green-500 via-emerald-400 to-green-500 rounded-full shadow-lg shadow-green-500/50"></span> */}
                 </span>
               </h1>
 
-              <div className="h-8 sm:h-10 flex items-center justify-center lg:justify-start gap-1 sm:gap-2">
-                <span className="text-green-500/70 text-base sm:text-xl font-mono">{'>'}</span>
-                <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-green-300 font-mono">
-                  <ReactTyped
-                    strings={[
-                      "Full-Stack Developer",
-                      "AI/ML Engineer",
-                      "React Specialist",
-                      "Problem Solver",
-                      "Your Next Hire 🚀",
-                    ]}
-                    typeSpeed={50}
-                    backSpeed={30}
-                    backDelay={2000}
-                    loop
-                    cursorChar="_"
-                  />
-                </p>
+              <div className="relative">
+                {/* Terminal Window */}
+                <div className="bg-black/60 backdrop-blur-sm border border-green-500/30 rounded-lg p-3 sm:p-4 max-w-md">
+                  {/* Terminal Header */}
+                  <div className="flex items-center gap-2 mb-2 pb-2 border-b border-green-500/20">
+                    <div className="flex gap-1.5">
+                      <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80"></span>
+                      <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80"></span>
+                      <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80"></span>
+                    </div>
+                    <span className="text-[10px] sm:text-xs text-gray-500 font-mono ml-2">saif@portfolio:~</span>
+                  </div>
+
+                  {/* Terminal Content */}
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 font-mono">
+                      <span className="text-green-500">$</span>
+                      <span>whoami</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-500 text-sm sm:text-base font-mono">→</span>
+                      <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-green-300 font-mono">
+                        <ReactTyped
+                          strings={[
+                            "Full-Stack Developer",
+                            "AI/ML Engineer",
+                            "React Specialist",
+                            "Problem Solver",
+                            "Your Next Hire 🚀",
+                          ]}
+                          typeSpeed={50}
+                          backSpeed={30}
+                          backDelay={2000}
+                          loop
+                          cursorChar="█"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-green-500/20 rounded-lg blur-xl -z-10"></div>
               </div>
 
               <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed px-4 sm:px-0">

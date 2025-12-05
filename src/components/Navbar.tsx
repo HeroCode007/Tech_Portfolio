@@ -84,9 +84,9 @@ const EnhancedNavbar = () => {
               {/* Logo text */}
               <div className="hidden sm:block">
                 <span className="text-xl font-bold bg-gradient-to-r from-green-300 via-emerald-400 to-green-300 bg-clip-text text-transparent">
-                  Saif
+                  TECH
                 </span>
-                <span className="text-xl font-bold text-white">.dev</span>
+                <span className="text-xl font-bold text-white">_SCULPT</span>
               </div>
             </button>
 
@@ -99,17 +99,17 @@ const EnhancedNavbar = () => {
                   onMouseEnter={() => setHoveredItem(item.id)}
                   onMouseLeave={() => setHoveredItem(null)}
                   className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${activeSection === item.id
-                      ? "text-green-400"
-                      : "text-gray-400 hover:text-white"
+                    ? "text-green-400"
+                    : "text-gray-400 hover:text-white"
                     }`}
                 >
                   {/* Active/Hover background */}
                   <span
                     className={`absolute inset-0 rounded-lg transition-all duration-300 ${activeSection === item.id
-                        ? "bg-green-500/10 border border-green-500/30"
-                        : hoveredItem === item.id
-                          ? "bg-white/5"
-                          : ""
+                      ? "bg-green-500/10 border border-green-500/30"
+                      : hoveredItem === item.id
+                        ? "bg-white/5"
+                        : ""
                       }`}
                   />
 
@@ -197,8 +197,8 @@ const EnhancedNavbar = () => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`group w-full flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 ${activeSection === item.id
-                    ? "bg-green-500/10 border border-green-500/30"
-                    : "hover:bg-white/5 border border-transparent"
+                  ? "bg-green-500/10 border border-green-500/30"
+                  : "hover:bg-white/5 border border-transparent"
                   }`}
                 style={{
                   transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms',
@@ -217,8 +217,8 @@ const EnhancedNavbar = () => {
 
                 {/* Arrow */}
                 <ChevronRight className={`w-5 h-5 transition-all duration-300 ${activeSection === item.id
-                    ? "text-green-400 translate-x-0"
-                    : "text-gray-600 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
+                  ? "text-green-400 translate-x-0"
+                  : "text-gray-600 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
                   }`} />
 
                 {/* Active indicator */}

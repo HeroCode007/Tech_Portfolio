@@ -28,29 +28,27 @@ const EnhancedProjects = () => {
     {
       title: 'The Trend Seller',
       description: 'A full-stack e-commerce platform with modern UI, secure authentication, product management, shopping cart, and payment integration for a seamless shopping experience.',
-      image: 'https://i.postimg.cc/Kz8LxRkZ/ecommerce.jpg',
+      image: 'https://i.postimg.cc/sXg2pdbs/E-COMM.jpg',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Stripe'],
       features: ['User Authentication', 'Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management', 'Admin Dashboard'],
       category: 'Web-Dev',
       icon: '🛒',
       gradient: 'from-green-500 to-emerald-500',
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://www.thetrendseller.com/',
       }
     },
     {
       title: 'Direct Line Engineering',
       description: 'A professional static website for calibration services company showcasing their services, certifications, and contact information with a clean corporate design.',
-      image: 'https://i.postimg.cc/htcLbVfW/calibration.jpg',
+      image: 'https://i.postimg.cc/pVc5bxmj/DLEC.png',
       technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Responsive Design'],
       features: ['Service Showcase', 'Company Profile', 'Contact Forms', 'Responsive Layout', 'SEO Optimized', 'Fast Loading'],
       category: 'Web-Dev',
       icon: '🔧',
       gradient: 'from-emerald-500 to-teal-500',
       links: {
-        demo: 'https://www.dlec.com',
-        github: '#'
+        demo: 'https://directlineeng.com/',
       }
     },
     {
@@ -63,7 +61,6 @@ const EnhancedProjects = () => {
       icon: '🚀',
       gradient: 'from-purple-500 to-pink-500',
       links: {
-        github: '#'
       }
     },
     {
@@ -76,7 +73,6 @@ const EnhancedProjects = () => {
       icon: '🧱',
       gradient: 'from-orange-500 to-red-500',
       links: {
-        github: '#'
       }
     },
     {
@@ -89,8 +85,6 @@ const EnhancedProjects = () => {
       icon: '🎵',
       gradient: 'from-green-500 to-cyan-500',
       links: {
-        demo: '#',
-        github: '#'
       }
     },
     {
@@ -103,7 +97,6 @@ const EnhancedProjects = () => {
       icon: '🐦',
       gradient: 'from-yellow-500 to-green-500',
       links: {
-        github: '#'
       }
     },
     {
@@ -116,7 +109,6 @@ const EnhancedProjects = () => {
       icon: '🗄️',
       gradient: 'from-blue-500 to-indigo-500',
       links: {
-        github: '#'
       }
     },
     {
@@ -129,7 +121,6 @@ const EnhancedProjects = () => {
       icon: '🤖',
       gradient: 'from-violet-500 to-purple-500',
       links: {
-        github: '#'
       }
     }
   ];
@@ -201,16 +192,16 @@ const EnhancedProjects = () => {
               key={category.name}
               onClick={() => setActiveCategory(category.name)}
               className={`group relative px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${activeCategory === category.name
-                  ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-black shadow-lg shadow-green-500/25'
-                  : 'bg-black/40 text-gray-400 border border-green-500/10 hover:border-green-500/30 hover:text-white'
+                ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-black shadow-lg shadow-green-500/25'
+                : 'bg-black/40 text-gray-400 border border-green-500/10 hover:border-green-500/30 hover:text-white'
                 }`}
             >
               <span className="flex items-center gap-2">
                 <span>{category.icon}</span>
                 <span>{category.name}</span>
                 <span className={`text-xs px-1.5 py-0.5 rounded-md ${activeCategory === category.name
-                    ? 'bg-black/20 text-black'
-                    : 'bg-green-500/10 text-green-400'
+                  ? 'bg-black/20 text-black'
+                  : 'bg-green-500/10 text-green-400'
                   }`}>
                   {category.count}
                 </span>
@@ -231,8 +222,8 @@ const EnhancedProjects = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               <div className={`relative h-full rounded-2xl bg-black/40 backdrop-blur-sm border overflow-hidden transition-all duration-500 ${hoveredProject === project.title
-                  ? 'border-green-500/50 shadow-xl shadow-green-500/10 transform -translate-y-2'
-                  : 'border-green-500/10'
+                ? 'border-green-500/50 shadow-xl shadow-green-500/10 transform -translate-y-2'
+                : 'border-green-500/10'
                 }`}>
 
                 {/* Image Container */}
